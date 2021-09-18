@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --softRed: hsl(0, 93%, 68%);
+  --desRed: hsl(0, 36%, 70%);
+  --grayishRed: hsl(0, 6%, 24%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  /* border: 1px solid black; */
+  max-width: 100%;
+  margin: 3rem auto;
+}
+
+.paddingGlobal {
+  padding: 0 1rem;
+}
+
+.logoImg {
+  max-width: 35%;
+  margin-bottom: 2rem;
+}
+
+.heroImg {
+  max-width: 100%;
+}
+
+.heroText {
+  margin: 3rem 0 5rem 0;
+}
+
+.heroText h1,
+.heroText span {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--grayishRed);
+  text-align: center;
+}
+
+.heroText span {
+  font-weight: 300;
+  color: var(--desRed);
+}
+
+.heroText p {
+  margin-top: 1rem;
+  color: var(--desRed);
+  line-height: 1.7;
+  text-align: center;
+}
+
+.heroText input {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  color: var(--desRed);
+  outline: none;
+  border: 1px solid var(--desRed);
+  border-radius: 2rem;
+}
+
+/* .heroText button {
+  padding: 0.5rem;
+  width: 10%;
+} */
