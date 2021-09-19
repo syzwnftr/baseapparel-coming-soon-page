@@ -13,14 +13,18 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+main {
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
 .container {
   /* border: 1px solid black; */
   max-width: 100%;
-  margin: 3rem auto;
+  margin: 2rem auto;
 }
 
 .paddingGlobal {
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .logoImg {
@@ -55,19 +59,36 @@
   color: var(--desRed);
   line-height: 1.7;
   text-align: center;
+  font-size: 0.9rem;
 }
 
-.heroText input {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  width: 100%;
+.inputBtn {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.heroText .inputBtn input {
+  padding: 1rem 1.5rem;
   color: var(--desRed);
   outline: none;
   border: 1px solid var(--desRed);
   border-radius: 2rem;
+  width: 100%;
+  font-weight: 600;
 }
 
-/* .heroText button {
-  padding: 0.5rem;
-  width: 10%;
-} */
+.heroText .inputBtn button {
+  padding: 0.95rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  margin-left: -3rem;
+  box-shadow: 0 3px 20px 1px var(--desRed);
+}
+
+.heroText .inputBtn button:hover {
+  background: linear-gradient(135deg, hsl(0, 86%, 90%), hsl(0, 74%, 90%));
+}
