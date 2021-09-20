@@ -66,7 +66,7 @@ main {
   /* border: 1px solid black; */
   display: flex;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .heroText .inputBtn input {
@@ -93,6 +93,22 @@ main {
   background: linear-gradient(135deg, hsl(0, 86%, 90%), hsl(0, 74%, 90%));
 }
 
+.heroText .error-icon {
+  background-image: url(./images/icon-error.svg);
+  background-position: right 20% center;
+  background-repeat: no-repeat;
+  background-size: 7%;
+}
+
+.heroText .error-msg {
+  color: var(--softRed);
+  padding: 0 1.5rem;
+  font-size: 0.7rem;
+  margin-top: 0;
+  text-align: left;
+  display: none;
+}
+
 .heroImgDesktop {
   display: none;
 }
@@ -107,6 +123,10 @@ main {
   main {
     display: flex;
     justify-content: flex-end;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .container {
@@ -118,13 +138,13 @@ main {
 
   .hero-mobile,
   .hero-desktop {
-    /* border: 2px solid green; */
     flex-basis: 50%;
   }
 
   .hero-mobile {
     /* border: 1px solid black; */
     padding: 2rem;
+    padding-bottom: 0;
   }
 
   .hero-mobile .logo {
