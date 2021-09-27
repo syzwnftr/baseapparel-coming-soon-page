@@ -120,6 +120,10 @@ main {
 }
 
 @media (min-width: 60rem) {
+  body {
+    overflow: hidden;
+  }
+
   main {
     display: flex;
     justify-content: flex-end;
@@ -172,7 +176,7 @@ main {
 
   .hero-desktop .heroImgDesktop {
     display: block;
-    max-height: 100vh;
+    /* max-height: 100vh; */
     width: auto;
   }
 }
@@ -194,6 +198,7 @@ main {
   .heroText h1,
   .heroText span {
     font-size: 3.5rem;
+    margin-bottom: 1rem;
   }
 
   .heroText h1 {
@@ -202,6 +207,7 @@ main {
 
   .heroText p {
     padding-right: 12rem;
+    margin-bottom: 1.5rem;
   }
 
   .heroText .inputBtn input {
